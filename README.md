@@ -1,3 +1,8 @@
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![AI](https://img.shields.io/badge/Focus-Trustworthy%20AI-orange)
+![Dataset](https://img.shields.io/badge/Dataset-NASA%20C--MAPSS-red)
+
 # Trustworthy Causal AI System for Predictive Maintenance using NASA C-MAPSS
 
 
