@@ -94,6 +94,18 @@ Trustworthy-Causal-AI-Predictive-Maintenance-NASA-CMAPSS
 │   ├── 03_Causal_Structure_Discovery.ipynb
 │
 │   └── 04_Trustworthy_Causal_AI_Final_System.ipynb
+
+├── results
+│
+│   ├── actual_vs_predicted_RUL.png
+│   ├── sensor_importance.png
+│   ├── prediction_results.csv
+│   ├── sensor_importance.csv
+│   └── uncertainty_distribution.csv
+
+├── README.md
+├── requirements.txt
+└── LICENSE
 │
 ├── README.md
 ├── requirements.txt
@@ -172,13 +184,13 @@ Failure
 ## Notebook 04
 ### Trustworthy Causal AI Final System
 
-
 Implemented:
 
-- Random Forest predictive model
-- Unseen engine evaluation
-- Explainability
-- Prediction uncertainty estimation
+- Random Forest RUL prediction model
+- Evaluation on unseen engine units
+- Sensor-based explainability analysis
+- Feature importance interpretation
+- Ensemble-based prediction uncertainty estimation
 
 
 Model results:
@@ -196,6 +208,21 @@ R²:
 0.385
 
 
+
+---
+
+
+
+# Results Visualization
+
+The final system generates:
+
+- Actual vs Predicted RUL comparison
+- Sensor importance ranking
+- Prediction uncertainty distribution
+- Prediction result tables
+
+These artifacts are available in the `results/` directory.
 
 ---
 
@@ -277,12 +304,13 @@ AI Areas:
 
 # Research Direction
 
-This project provides a foundation for PhD-level research in:
+This project provides a foundation for future research in:
 
-- Causal Machine Learning
-- Industrial AI
-- Intelligent Maintenance Systems
-- Trustworthy Decision Support Systems
+- Causal Machine Learning for Industrial Systems
+- Trustworthy Artificial Intelligence
+- AI-driven Predictive Maintenance
+- Decision-support systems under uncertainty
+- Human-interpretable industrial AI
 
 ---
 
@@ -291,6 +319,9 @@ This project provides a foundation for PhD-level research in:
 All experiments were developed using Python-based machine learning workflows.
 
 The project structure, notebooks, and requirements file are provided to support reproducibility and further research exploration.
+
+The required Python dependencies are provided in:
+requirements.txt
 
 
 ---
