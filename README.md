@@ -1,369 +1,152 @@
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
-![AI](https://img.shields.io/badge/Focus-Trustworthy%20AI-orange)
+![Trustworthy AI](https://img.shields.io/badge/Trustworthy-AI-green)
+![Causal AI](https://img.shields.io/badge/Causal-AI-orange)
 ![Dataset](https://img.shields.io/badge/Dataset-NASA%20C--MAPSS-red)
+![License](https://img.shields.io/badge/License-MIT-brightgreen)
 
 # Trustworthy Causal AI System for Predictive Maintenance using NASA C-MAPSS
 
-
 ## Overview
 
-This project develops a trustworthy industrial AI framework for predictive maintenance using the NASA C-MAPSS turbofan engine degradation dataset.
+This project presents a research-oriented **Trustworthy Causal AI framework** for predictive maintenance using the NASA C-MAPSS turbofan engine degradation dataset.
 
-The objective is to move beyond traditional failure prediction models by integrating:
+Unlike conventional Remaining Useful Life (RUL) prediction systems, this work extends predictive maintenance toward **causal reasoning**, **structural causal modelling**, **counterfactual analysis**, and **maintenance decision support**, enabling more transparent and interpretable industrial AI.
 
-- Remaining Useful Life (RUL) prediction
-- Explainable AI
-- Sensor degradation analysis
-- Causal AI reasoning framework
-- Prediction uncertainty estimation
+The project follows the complete research pipeline:
 
-
-The project follows the research direction:
-
-Prediction → Explanation → Causal AI Reasoning
-
+**Prediction → Explainability → Temporal Causal Discovery → Structural Causal Modeling → Counterfactual Reasoning → Maintenance Decision Support**
 
 ---
 
-# Research Motivation
+# Research Objectives
 
-Industrial predictive maintenance systems can forecast failures, but real-world deployment requires deeper understanding:
+This project investigates how industrial AI systems can move beyond accurate prediction to answer practical engineering questions such as:
 
-- Why is the system degrading?
-- Which variables influence failure progression?
-- How confident is the AI prediction?
-- What interventions could reduce maintenance risk?
-
-
-This project explores the transition from predictive machine learning toward trustworthy causal industrial AI.
-
+- Why is the engine degrading?
+- Which sensors drive degradation?
+- Which variables are causal rather than merely correlated?
+- What maintenance intervention would improve engine health?
+- How confident is the AI system in its recommendations?
 
 ---
 
 # Dataset
 
-Dataset:
+**NASA Commercial Modular Aero-Propulsion System Simulation (C-MAPSS)**
 
-NASA Commercial Modular Aero-Propulsion System Simulation (C-MAPSS)
+Dataset Used:
 
+- FD001 Training Dataset
+- FD001 Testing Dataset
+- Remaining Useful Life (RUL) Labels
 
-Dataset characteristics:
+Dataset contains:
 
-- Turbofan engine degradation simulation
-- Multiple engine units
-- Time-series sensor measurements
-- Progressive failure behaviour
-
-
-Features:
-
-- Engine ID
-- Operating cycle
-- Operational settings
+- 100 training engines
+- 100 testing engines
 - 21 sensor measurements
-
-
-Dataset used:
-
-FD001 subset
-
-
-Training engines:
-100
-
-Testing engines:
-100
-
+- Operational settings
+- Complete engine degradation trajectories
 
 ---
 
-# Project Structure
+# Project Pipeline
 
-Trustworthy-Causal-AI-Predictive-Maintenance-NASA-CMAPSS
+The repository consists of eight research notebooks:
 
-│
-├── data
-│   └── raw
-│       └── synapse_data
-│           ├── train_FD001.txt
-│           ├── test_FD001.txt
-│           └── RUL_FD001.txt
-│
-├── notebooks
-│
-│   ├── 01_Data_Understanding_Causal_Framing.ipynb
-│
-│   ├── 02_RUL_Engineering_Predictive_Maintenance.ipynb
-│
-│   ├── 03_Causal_Structure_Discovery.ipynb
-│
-│   └── 04_Trustworthy_Causal_AI_Final_System.ipynb
-
-├── results
-│
-│   ├── actual_vs_predicted_RUL.png
-│   ├── sensor_importance.png
-│   ├── prediction_results.csv
-│   ├── sensor_importance.csv
-│   └── uncertainty_distribution.csv
-
-├── README.md
-├── requirements.txt
-└── LICENSE
-│
-├── README.md
-├── requirements.txt
-└── LICENSE
+| Notebook | Description |
+|----------|-------------|
+| 01 | Data Understanding & Industrial Causal Framing |
+| 02 | Remaining Useful Life Engineering |
+| 03 | Baseline Causal Structure Discovery |
+| 04 | Trustworthy AI Prediction & Explainability |
+| 05 | Temporal Causal Discovery using Granger Causality |
+| 06 | Structural Causal Model (SCM) Construction |
+| 07 | Structural Equation Modelling (SEM) |
+| 08 | Counterfactual Reasoning & Maintenance Decision Support |
 
 ---
 
-# Methodology
+# Key Features
 
-
-## Notebook 01
-### Data Understanding & Causal Framing
-
-Performed:
-
-- Dataset exploration
-- Engine lifecycle analysis
-- Sensor behaviour analysis
-- Degradation pattern identification
-
+- Remaining Useful Life Prediction
+- Explainable AI
+- Temporal Causal Discovery
+- Structural Causal Modelling
+- Structural Equation Modelling
+- Counterfactual Maintenance Simulation
+- Sensor Influence Analysis
+- Maintenance Decision Support
+- Trustworthy Industrial AI Framework
 
 ---
 
-## Notebook 02
-### Remaining Useful Life Engineering
-
-Performed:
-
-- RUL calculation
-- Predictive target creation
-- Sensor degradation relationship analysis
-
-
-RUL formulation:
-
-RUL = Maximum engine cycle - Current cycle
-
-
----
-
-## Notebook 03
-### Causal Structure Discovery Foundation
-
-Performed:
-
-- Sensor normalization
-- Dependency analysis
-- Causal assumptions
-- Industrial causal hypothesis graph
-
-
-Conceptual causal flow:
-
-
-Operational Conditions
-
-↓
-
-Sensor Dynamics
-
-↓
-
-Engine Degradation
-
-↓
-
-RUL
-
-↓
-
-Failure
-
-
----
-
-## Notebook 04
-### Trustworthy Causal AI Final System
-
-Implemented:
-
-- Random Forest RUL prediction model
-- Evaluation on unseen engine units
-- Sensor-based explainability analysis
-- Feature importance interpretation
-- Ensemble-based prediction uncertainty estimation
-
-
-Model results:
-
-
-RMSE:
-46.24 cycles
-
-
-MAE:
-34.87 cycles
-
-
-R²:
-0.385
-
-
-
----
-
-
-
-# Results Visualization
-
-The final system generates:
-
-- Actual vs Predicted RUL comparison
-- Sensor importance ranking
-- Prediction uncertainty distribution
-- Prediction result tables
-
-These artifacts are available in the `results/` directory.
-
----
-
-# Key Findings
-
-The developed industrial AI pipeline successfully:
-
-- Processes raw turbofan telemetry data
-- Predicts remaining useful life
-- Identifies important degradation-related sensors
-- Estimates prediction confidence
-
-
-Important insight:
-
-Feature importance indicates predictive influence, not causal influence.
-
-
-Therefore trustworthy industrial AI requires:
-
-Prediction + Explanation + Causal Understanding
-
-
----
-
-# Critical Insight
-
-Industrial systems are complex.
-
-A model may predict failure accurately but still cannot answer:
-
-"Why did failure happen?"
-
-"What factor caused degradation?"
-
-"What intervention could reduce risk?"
-
-
-Future extensions:
-
-- Structural Causal Models (SCM)
-- Granger causality
-- Temporal causal discovery
-- Counterfactual maintenance simulation
-- Digital twin based interventions
-
+# Results
+
+The framework generates:
+
+- Remaining Useful Life predictions
+- Sensor importance rankings
+- Temporal causal graphs
+- Structural causal models
+- Structural equation models
+- Counterfactual intervention analysis
+- Maintenance priority recommendations
+- Industrial decision-support outputs
 
 ---
 
 # Technologies
 
-Python
-
-Libraries:
-
+- Python
 - Pandas
 - NumPy
 - Matplotlib
 - Seaborn
 - Scikit-learn
 - NetworkX
+- Statsmodels
 
+---
 
-Machine Learning:
+# Research Contributions
 
-- Random Forest Regression
+This work demonstrates an end-to-end industrial AI pipeline that combines:
 
-
-AI Areas:
-
-- Industrial AI
-- Predictive Maintenance
+- Machine Learning
 - Explainable AI
-- Causal AI
-- Trustworthy AI
+- Temporal Causal Discovery
+- Structural Causal Modelling
+- Counterfactual Reasoning
 
-
----
-
-# Research Direction
-
-This project provides a foundation for future research in:
-
-- Causal Machine Learning for Industrial Systems
-- Trustworthy Artificial Intelligence
-- AI-driven Predictive Maintenance
-- Decision-support systems under uncertainty
-- Human-interpretable industrial AI
+to support trustworthy predictive maintenance for complex engineering systems.
 
 ---
 
-# Reproducibility
+# Future Work
 
-All experiments were developed using Python-based machine learning workflows.
+Potential extensions include:
 
-The project structure, notebooks, and requirements file are provided to support reproducibility and further research exploration.
-
-The required Python dependencies are provided in:
-requirements.txt
-
+- Dynamic Bayesian Networks
+- Do-Calculus based intervention analysis
+- Causal Reinforcement Learning
+- Digital Twin Integration
+- Real-time Industrial Deployment
 
 ---
-
 
 # Citation
 
-If you use this project or the methodology for research, please cite the following:
-
-## Dataset Citation
+**Dataset**
 
 Saxena, A., & Goebel, K. (2008).  
 *Turbofan Engine Degradation Simulation Data Set.*  
-NASA Ames Research Center, NASA Prognostics Data Repository.
+NASA Prognostics Data Repository.
 
-Available at:
 https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/
-
-
-## Project Citation
-
-Trustworthy Causal AI System for Predictive Maintenance using NASA C-MAPSS.
-
-GitHub Repository.
-
-A research implementation exploring:
-- Remaining Useful Life prediction
-- Explainable Industrial AI
-- Trustworthy AI for predictive maintenance
-- Causal reasoning frameworks for machine degradation analysis
-
 
 ---
 
-
 # License
 
-This project is released under the MIT License.
-
-You are free to use, modify, and distribute this project with appropriate attribution.
+Released under the MIT License.
