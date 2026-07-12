@@ -4,7 +4,11 @@
 ![Machine Learning](https://img.shields.io/badge/Machine-Learning-red)
 ![NASA C-MAPSS](https://img.shields.io/badge/Dataset-NASA%20C--MAPSS-purple)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
-[![DOI](https://zenodo.org/badge/DOI/21325769.svg)](https://zenodo.org/records/21325769)
+[![DOI](https://zenodo.org/badge/DOI/YOUR_DOI.svg)](https://doi.org/YOUR_DOI)
+![Technical Report](https://img.shields.io/badge/Technical-Report-blue)
+![Research Project](https://img.shields.io/badge/Research-Industrial_AI-success)
+![Trustworthy AI](https://img.shields.io/badge/Trustworthy-AI-green)
+![Causal AI](https://img.shields.io/badge/Causal-Inference-orange)
 
 # Trustworthy Causal Artificial Intelligence for Predictive Maintenance using NASA C-MAPSS
 
