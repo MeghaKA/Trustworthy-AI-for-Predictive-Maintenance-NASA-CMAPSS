@@ -4,6 +4,7 @@
 ![Machine Learning](https://img.shields.io/badge/Machine-Learning-red)
 ![NASA C-MAPSS](https://img.shields.io/badge/Dataset-NASA%20C--MAPSS-purple)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
+[![DOI](https://zenodo.org/badge/DOI/YOUR_DOI.svg)](https://doi.org/YOUR_DOI)
 
 # Trustworthy Causal Artificial Intelligence for Predictive Maintenance using NASA C-MAPSS
 
@@ -58,6 +59,13 @@ The report contains:
 - Research Contributions
 - Future Research Directions
 - Complete Technical Implementation
+
+
+The complete research report is available here:
+
+📄 Technical Report (PDF)
+
+https://zenodo.org/records/21325769
 
 ---
 
@@ -250,11 +258,17 @@ Potential future research directions include
 
 # Citation
 
-If you use this repository, please cite the accompanying technical report.
+If you use this work in your research, please cite:
 
-**Technical Report**
+Megha Kalachira Ankush
 
-Megha Kalachira
+*Trustworthy Causal Artificial Intelligence for Predictive Maintenance using NASA C-MAPSS.*
+
+Zenodo.
+
+DOI: https://zenodo.org/records/21325769
+
+Megha Kalachira Ankush
 
 **Trustworthy Causal Artificial Intelligence for Predictive Maintenance using NASA C-MAPSS**
 
