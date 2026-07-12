@@ -69,7 +69,7 @@ The complete research report is available here:
 
 📄 Technical Report (PDF)
 
-https://zenodo.org/records/21325769
+https://doi.org/10.5281/zenodo.21325769
 
 ---
 
@@ -270,7 +270,7 @@ Megha Kalachira Ankush
 
 Zenodo.
 
-DOI: https://zenodo.org/records/21325769
+DOI:https://doi.org/10.5281/zenodo.21325769
 
 Megha Kalachira Ankush
 
